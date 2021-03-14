@@ -1,0 +1,49 @@
+/* social networks */
+.social-list {
+  list-style: none;
+  margin: 0px;
+  padding-inline-start: 0px;
+  padding: 0px 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-list__item {
+  display: flex;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.social-list__item:last-child {
+  margin-right: 0px;
+}
+
+.social-list__link {
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: $duration;
+  transition-timing-function: $function;
+}
+
+.social-list__icon {
+  fill: $icon-primery-color;
+  transition-property: fill;
+  transition-duration: $duration;
+  transition-timing-function: $function;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: $accent-color;
+}
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: $accent-secondary-color;
+}

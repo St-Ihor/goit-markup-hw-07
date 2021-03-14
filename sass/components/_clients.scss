@@ -1,0 +1,45 @@
+/* Clients*/
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-left: 0 0 0 -30px;
+}
+
+.client__link {
+  text-decoration: none;
+  margin-left: 30px;
+  border: 1px solid $icon-primery-color;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: border;
+  transition-duration: $duration;
+  transition-timing-function: $function;
+}
+
+.client__icon {
+  fill: $icon-primery-color;
+  transition-property: fill;
+  transition-duration: $duration;
+  transition-timing-function: $function;
+}
+
+.client__link:hover,
+.client__link:focus {
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+}
+
+.client__link:hover .client__icon,
+.client__link:focus .client__icon {
+  fill: $accent-color;
+}

@@ -1,0 +1,69 @@
+/* values */
+.values {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.values__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.values__item {
+  width: 270px;
+}
+
+.values__item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.values__item:nth-child(1)::before {
+  background-image: url(../image/values1.svg);
+}
+
+.values__item:nth-child(2)::before {
+  background-image: url(../image/values2.svg);
+}
+
+.values__item:nth-child(3)::before {
+  background-image: url(../image/values3.svg);
+}
+
+.values__item:nth-child(4)::before {
+  background-image: url(../image/values4.svg);
+}
+
+.values__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.values__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: $secondary-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.values__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
