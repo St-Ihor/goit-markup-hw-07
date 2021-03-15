@@ -14,36 +14,26 @@
 
 .values__item {
   width: 270px;
-}
 
-.values__item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-}
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 
-.values__item:nth-child(1)::before {
-  background-image: url(../image/values1.svg);
-}
+  @each $number in 1, 2, 3, 4 {
+    &:nth-child(#{$number})::before {
+      background-image: url(../image/values#{$animal}.svg);
+    }
+  }
 
-.values__item:nth-child(2)::before {
-  background-image: url(../image/values2.svg);
-}
-
-.values__item:nth-child(3)::before {
-  background-image: url(../image/values3.svg);
-}
-
-.values__item:nth-child(4)::before {
-  background-image: url(../image/values4.svg);
-}
-
-.values__item:not(:first-child) {
-  margin-left: 30px;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .values__name {

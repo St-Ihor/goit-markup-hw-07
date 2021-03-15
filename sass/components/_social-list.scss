@@ -12,10 +12,10 @@
   display: flex;
   margin-right: 10px;
   border-radius: 50%;
-}
 
-.social-list__item:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .social-list__link {
@@ -29,6 +29,11 @@
   transition-property: background-color;
   transition-duration: $duration;
   transition-timing-function: $function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .social-list__icon {
@@ -36,14 +41,9 @@
   transition-property: fill;
   transition-duration: $duration;
   transition-timing-function: $function;
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: $accent-color;
-}
-
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-  fill: $accent-secondary-color;
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: $accent-secondary-color;
+  }
 }
