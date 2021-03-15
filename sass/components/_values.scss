@@ -27,7 +27,7 @@
 
   @each $number in 1, 2, 3, 4 {
     &:nth-child(#{$number})::before {
-      background-image: url(../image/values#{$animal}.svg);
+      background-image: url(../image/values#{$number}.svg);
     }
   }
 
